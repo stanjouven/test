@@ -13,7 +13,7 @@ Files Description:
     ├── helpers                           # Folder corresponding to the implementation of SGNS
     │   ├── create_helper_files.ipynb                                 # Create data if we want to modify the minimum number of comments per channel
     │   ├── config_threshold_value.py                                 # Parameters for the minimum number of comments per channel
-    │   ├── helpers_channel_embedding.py                              # Helper to compute the jumper and the position ratio
+    │   ├── helpers_channel_embedding.py                              # Helper file to compute the jumper and the position ratio
     │   ├── helpers_channels_more_10k.py                              # Helper file for channels having more than 10k comments
     │   ├── helpers_channels_more_300.py                              # Helper file for channels having more than 300 comments
     │   ├── helpers_channels_more_300.py                              # Helper file to visualize the axis projection method
@@ -24,18 +24,21 @@ Files Description:
     ├── word2vec                          # Folder using the word2vecf open source code
     |   ├── ... not used for the final embedding
     |
-    ├── word2vec_pytorch                  # Folder corresponding to the implementation of SGNS
+    ├── word2vec_pytorch                  # Folder corresponding to the implementation of SGNS (skip gram with negative sampling)
     │   ├── creates_training_data             # Folder where the training samples are constructed
-    |   |   ├── preprocessing_file_gen_then_sample.ipynb              # First generate the pairs then sample
-    |   |   ├── preprocessing_file_gen_then_weighted_sample.ipynb     # First generate the pairs then sample according to a weighted scheme
-    |   |   ├── preprocessing_file_sample_then_gen.ipynb              # First sample then generate the pairs from the selected channels
+    |   |   ├── preprocessing_file_gen_then_sample.ipynb              # Generates the pairs then sample
+    |   |   ├── preprocessing_file_gen_then_weighted_sample.ipynb     # Generates the pairs then sample according to a weighted scheme
+    |   |   ├── preprocessing_file_sample_then_gen.ipynb              # Sample channels then generate the pairs from the selected channels
     │   ├── embedding_space              # Folder keeping track of the results
     |   |   ├── ...
-    │   ├── main.ipynb                                                # Notebook doingg the training processes
-    │   ├── config.py                                                 # Parameters about the training and the result paths
+    │   ├── main.ipynb                                                # Notebook running the training process
+    │   ├── config.py                                                 # Parameters on the training and the result paths
     │   ├── model.py                                                  # Model used
-    └── data_analysis.ipynb                                           # Analyses on the number of comments per channel            
+    └── data_analysis.ipynb                                           # Notebook analysing the number of comments per channel            
 
+Two configurations currently exist:
+- Channels having more than 10k comments per channel
+- Channels having more than 300 comments per channel
 
 ### How to run and create an embedding:
 
@@ -51,9 +54,6 @@ to generate the training samples.
 - Create `check_embedding_space.ipynb` and `axis_projection.ipynb` similar to the existing embeddings if they do not exist
 - Run `check_embedding_space.ipynb` and `axis_projection.ipynb` with the PATH being the path where the embedding is stored
 
-Two configurations are possible for now:
-- Channels having more than 10k comments per channel
-- Channels having more than 300 comments per channel
 
 ### If you want to select channels having more than k comments per channel (k > 300):
 - Modify the THRESHOLD and THRESHOLD_NAME parameter in `helpers/config_threshold_value.py` with the new threshold
