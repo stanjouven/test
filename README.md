@@ -4,7 +4,7 @@
     
 Based on the YouTube comments from 2005 to 2019 this project consists of characterizing the evolution of user interest. In order to find and analyse the communities in this huge social platform, we have to perform an embedding at the video level and an embedding at the channel level. Naturally, the two embeddings should share common characteristics which would determine the behaviour of users on YouTube. This work done on this project focuses on the channel embedding while a parallel work focuses on the video embedding. Results are expected to be shared and combined together in the end.
 
-File Description:
+Files Description:
 
 
     ├── bipartite_graph                   # Folder corresponding to the bipartite graph implementation
