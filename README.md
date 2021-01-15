@@ -51,8 +51,8 @@ to generate the training samples.
 - Run main.ipynb to create the channel embedding, the embedding will be stored in EMBEDDING_PATH (parameter in config.py)
 
 ### How to evaluate the performance of the embedding:
-- Create `check_embedding_space.ipynb` and `axis_projection.ipynb` similar to the existing embeddings if they do not exist
-- Run `check_embedding_space.ipynb` and `axis_projection.ipynb` with the PATH being the path where the embedding is stored
+- If they do not exist, create `check_embedding_space.ipynb` and `axis_projection.ipynb` similar to the existing embeddings 
+- Run `check_embedding_space.ipynb` and `axis_projection.ipynb` with the PATH being the path where the embedding is stored and with the correct `helpers/config_threshold_value.py` configuration.
 
 
 ### If you want to select channels having more than k comments per channel (k > 300):
