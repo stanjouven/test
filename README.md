@@ -4,6 +4,21 @@
     
 Based on the YouTube comments from 2005 to 2019 this project consists of characterizing the evolution of user interest. In order to find and analyse the communities in this huge social platform, we have to perform an embedding at the video level and an embedding at the channel level. Naturally, the two embeddings should share common characteristics which would determine the behaviour of users on YouTube. This work done on this project focuses on the channel embedding while a parallel work focuses on the video embedding. Results are expected to be shared and combined together in the end.
 
+## Datasets
+
+The table below summaries the dataset used during the project.
+
+| Dataset        | Description    |  
+| --------   | -----:   | 
+| youtube_comments.ndjson.zst        | The dataset contains more than 10B YouTube comments from 24/05/2005 to 20/11/2019. | 
+| df_channels_en.tsv.gz              | The dataset contains the features of 136’470 YouTube channels.   |  
+
+
+
+* yt_metadata_en: This dataset contains the following features for each video : `categories` `channel_id` `crawl_date` `description` `dislike_count` `like_count` `display_id` `duration` `tags`  `title`  `upload_date`  `view_count`  
+
+* df_channels_en: This dataset contains the following features for each channel : `category` `join_date` `channel_id` `name` `subscribers_counts` `videos_counts` `subscriber_rank_sb` `weights`
+
 ### Files Description:
 
 
