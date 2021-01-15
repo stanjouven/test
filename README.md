@@ -10,12 +10,12 @@ The table below summaries the dataset used during the project.
 
 | Dataset        | Description    |  
 | --------   | -----:   | 
-| youtube_comments.ndjson.zst        | The dataset contains more than 10B YouTube comments from 24/05/2005 to 20/11/2019. | 
-| df_channels_en.tsv.gz              | The dataset contains the features of 136’470 YouTube channels.   |  
+| youtube_comments.ndjson.zst        | The dataset contains the features of more than 10B YouTube comments gathered from 24/05/2005 to 20/11/2019. | 
+| df_channels_en.tsv.gz              | The dataset contains the features of the 136’470 english YouTube channels.   |  
 
 
 
-* yt_metadata_en: This dataset contains the following features for each video : `categories` `channel_id` `crawl_date` `description` `dislike_count` `like_count` `display_id` `duration` `tags`  `title`  `upload_date`  `view_count`  
+* youtube_comments: This dataset contains the following features for each video : `author_id` `id` `video_id` `crawled_at` `likes` `replies` `author` `content` 
 
 * df_channels_en: This dataset contains the following features for each channel : `category` `join_date` `channel_id` `name` `subscribers_counts` `videos_counts` `subscriber_rank_sb` `weights`
 
@@ -33,7 +33,7 @@ The table below summaries the dataset used during the project.
     │   ├── helpers_channels_more_300.py                              # Helper file for channels having more than 300 comments
     │   ├── helpers_channels_more_300.py                              # Helper file to visualize the axis projection method
     |
-    ├── bipartite_graph                   # Folder corresponding to the proximity graph implementation
+    ├── proximity_graph                   # Folder corresponding to the proximity graph implementation
     |   ├── ... not used for the final embedding
     |
     ├── word2vec                          # Folder using the word2vecf open source code
