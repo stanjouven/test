@@ -10,14 +10,17 @@ The table below summaries the dataset used during the project.
 
 | Dataset        | Description    |  
 | --------   | -----:   | 
-| youtube_comments.ndjson.zst        | The dataset contains the features of more than 10B YouTube comments gathered from 24/05/2005 to 20/11/2019. | 
-| df_channels_en.tsv.gz              | The dataset contains the features of the 136’470 english YouTube channels.   |  
+| youtube_comments.ndjson.zst               | The dataset contains the features of more than 10B YouTube comments gathered from 24/05/2005 to 20/11/2019. | 
+| df_channels_en.tsv.gz                     | The dataset contains the features of the 136’470 english YouTube channels.   |  
+| video_to_channel_mapping_filtered.pkl     | The dataset contains for the channels having more than 300 comments a mapping between video_id and channel_id   |  
 
 
 
 * youtube_comments: This dataset contains the following features for each video : `author_id` `id` `video_id` `crawled_at` `likes` `replies` `author` `content` 
 
 * df_channels_en: This dataset contains the following features for each channel : `category` `join_date` `channel_id` `name` `subscribers_counts` `videos_counts` `subscriber_rank_sb` `weights`
+
+* video_to_channel_mapping_filtered: `video_id` `channel_id`
 
 ### Files Description:
 
