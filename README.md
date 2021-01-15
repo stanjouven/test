@@ -1,4 +1,4 @@
-## Characterizing the evolution of user interests
+## Characterizing the of user interests
 ### Channel embedding
     
     
