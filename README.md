@@ -32,8 +32,9 @@ Based on the YouTube comments from 2005 to 2019 this project consists of charact
     │   ├── embedding_space              # Folder keeping track of the results
     |   |   ├── ...
     │   ├── main.ipynb                                                # Notebook running the training process
+    │   ├── model.py                                                  # Wor2Vec traditionnal model using pytorch
     │   ├── config.py                                                 # Parameters on the training and the result paths
-    │   ├── model.py                                                  # Model used
+    │   ├── utils_modified.py                                         # Helper file
     └── data_analysis.ipynb                                           # Notebook analysing the number of comments per channel            
 
 Two configurations currently exist:
